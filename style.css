@@ -1,0 +1,151 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+:root{
+    --body-background : #222831;
+    --card-background : #131842;
+    --stats-background : rgb(180, 63, 17);
+    --player-name : rgb(201, 57, 0);
+    --player-position : rgb(201, 57, 0);
+    --border : white;
+    --text: white;
+    --shadow:rgb(39, 38, 38);
+}
+
+body{
+    height: 100vh;
+    background-color: var(--body-background);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+
+
+*{
+    padding: 0;
+    margin: 0;
+    font-family: "Poppins", sans-serif;
+}
+
+
+.player-card{
+    width: 400px;
+    height: 400px;
+    background-color: var(--card-background);
+    border-radius: 20px;
+    position: relative;
+}
+
+.playerImage{
+    width: 100%;
+    height: fit-content;
+    filter: grayscale(1);
+}
+
+.image-container {
+    position: absolute;
+    width: 100%;
+    top: -160px;
+    z-index: 0;
+}
+  
+.PlayerDetails-container{
+    position: relative;
+    font-weight: 500;
+    text-shadow: 2px 2px var(--shadow);
+    font-style: italic;
+}
+
+.playerName{
+    font-size: 50px;
+    text-align: left;
+    padding-left: 20px;
+    padding-top: 20px;
+    color: var(--player-name);
+}
+
+.playerStats{
+    display: flex;
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+}
+
+.player-pointer{
+    background-color: var(--stats-background);
+    width: 100%;
+    border-bottom-left-radius: 20px;
+    color: var(--text);
+    display: flex;
+    flex-direction: column;
+    position: relative;
+    padding-left: 40px;
+}
+
+.player-assist::after{
+    content: '';
+    width: 1px;
+    height: 50%;
+    background-color: var(--border);
+    position: absolute;
+    top: 30%;
+    left: -10%;
+}
+
+.player-assist{
+    background-color: var(--stats-background);
+    width: 100%;
+    color: var(--text);
+    display: flex;
+    flex-direction: column;
+    padding-left: 10px;
+    position: relative;
+}
+
+.player-rebound::after{
+    content: '';
+    width: 1px;
+    height: 50%;
+    background-color: var(--border);
+    position: absolute;
+    top: 30%;
+    left: -10%;
+}
+
+.player-rebound{
+    background-color: var(--stats-background);
+    width: 100%;
+    border-bottom-right-radius: 20px;
+    color: var(--text);
+    display: flex;
+    flex-direction: column;
+    position: relative;
+    padding-left: 10px;
+}
+
+.player-pointer span, .player-assist span, .player-rebound span{
+    width: 100%;
+    margin-top: 10px;
+    
+    font-weight: 600;
+}
+
+.player-pointer p, .player-assist p, .player-rebound p{
+    font-size: 30px;
+    padding: 10px;
+    font-weight: 800;
+}
+
+
+.playerPosition{
+    font-size: 32px;
+    text-align: left;
+    padding-left: 20px;
+    color: var(--player-position);
+    display: flex;
+    flex-direction: column;
+}
+
+
+
