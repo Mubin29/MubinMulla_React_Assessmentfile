@@ -21,3 +21,8 @@ cd BasketBallPlayerCards
 2. npm install
 
 3. npm run
+
+## SCREENSHOT 
+
+![image](https://github.com/user-attachments/assets/992de290-11f9-4bd2-8c38-25c614f9e267)
+
