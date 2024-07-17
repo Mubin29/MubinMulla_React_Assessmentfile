@@ -25,7 +25,12 @@ Ensure you have the following installed on your development machine:
 1. Clone the repository:
 
 ```bash
-git clone https://github.com/Mubin29/BasketballPlayerCards.git
+git clone https://github.com/Abhishek123a45/BasketballPlayerCards.git
+cd BasketBallPlayerCards
+
+2. npm install
+
+3. npm run
 cd BasketBallPlayerCards
 
 2. npm install
